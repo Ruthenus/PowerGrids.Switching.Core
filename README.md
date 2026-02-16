@@ -6,9 +6,9 @@
 
 ## Особливості
 
-* **Safety First**: Вбудована підтримка оперативних блокувань (`Interlock`).
-* **Transactional Operations**: Автоматичне скасування всієї послідовності перемикань в разі виникнення технологічного порушення.
-* **Structured Logging**: Повна інтеграція з Serilog (з використанням контекстів для диспетчерських назв).
+- **Safety First**: Вбудована підтримка оперативних блокувань (`Interlock`).
+- **Transactional Operations**: Автоматичне скасування всієї послідовності перемикань в разі виникнення технологічного порушення.
+- **Structured Logging**: Повна інтеграція з Serilog (з використанням контекстів для диспетчерських назв).
 
 ---
 
@@ -62,28 +62,28 @@ executor.ExecuteAll();
 
 ### Командна модель
 
-* `ISwitchOperation` — основний інтерфейс.
-* `SwitchDeviceCommand` — одиночна операція зі станом.
-* `MacroCommand` — групування команд (Composite).
-* `ParallelCommand` — одночасне виконання (наприклад, для складних схем).
+- `ISwitchOperation` — основний інтерфейс.
+- `SwitchDeviceCommand` — одиночна операція зі станом.
+- `MacroCommand` — групування команд (Composite).
+- `ParallelCommand` — одночасне виконання (наприклад, для складних схем).
 
 ### Стани пристроїв
 
 Підтримуються оперативні стани згідно з галузевими стандартами:
 
-* `IntermediateState` (Проміжний)
-* `Off` (Вимкнено)
-* `On` (Увімкнено)
-* `BadState` (Несправність)
+- `IntermediateState` (Проміжний)
+- `Off` (Вимкнено)
+- `On` (Увімкнено)
+- `BadState` (Несправність)
 
 ---
 
 ## Специфікації пакета
 
-* **Target Framework:** `.NET 10.0`
-* **Dependencies:** `Serilog (>= 4.3.1)`
-* **Author:** Ruslan Kachurovskyi
-* **URL:** https://www.nuget.org/packages/PowerGrids.Switching.Core/
+- **Target Framework:** `.NET 10.0`
+- **Dependencies:** `Serilog (>= 4.3.1)`
+- **Author:** Ruslan Kachurovskyi
+- **URL:** https://www.nuget.org/packages/PowerGrids.Switching.Core/
 
 ---
 
